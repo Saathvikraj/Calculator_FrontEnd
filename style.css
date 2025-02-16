@@ -1,0 +1,75 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .calculator {
+    background: #2c3e50; /* Dark background for the calculator */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 300px;
+  }
+  
+  #display {
+    width: 100%;
+    height: 60px;
+    background: #34495e; /* Darker background for the display */
+    color: #fff;
+    font-size: 2rem;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  button {
+    background: #34495e; /* Button background */
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background: #1abc9c; /* Hover color */
+    transform: scale(1.05); /* Slight grow on hover */
+  }
+  
+  button:active {
+    transform: scale(0.95); /* Slight shrink on click */
+  }
+  
+  .operator {
+    background: #e67e22; /* Orange for operators */
+  }
+  
+  .operator:hover {
+    background: #d35400; /* Darker orange on hover */
+  }
+  
+  .clear {
+    background: #e74c3c; /* Red for clear button */
+    grid-column: span 4; /* Span across all columns */
+  }
+  
+  .clear:hover {
+    background: #c0392b; /* Darker red on hover */
+  }
